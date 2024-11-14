@@ -1,0 +1,130 @@
+/* styles.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#countdown-list {
+  margin-top: 20px;
+}
+
+.countdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input, #addBirthdayBtn {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#dateInput {
+  padding: 15px 12px;
+  font-size: 21px;
+  height: 50px; /* Larger height for the input field */
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: white;
+}
+
+/* Button styling */
+#addBirthdayBtn {
+  background-color: #00796b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addBirthdayBtn:hover {
+  background-color: #004d40;
+}
+
+@media (max-width: 600px) {
+  h1 {
+      font-size: 20px;
+  }
+
+  .countdown-item {
+      font-size: 16px;
+  }
+
+  #addBirthdayBtn {
+      font-size: 18px;
+      padding: 14px;
+  }
+
+  #dateInput {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
